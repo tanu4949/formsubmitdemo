@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>Better Life - Transforming Lives</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="style.scss">
+
+</head>
+<body>
+   
+<!-- navbar section starts  -->
+
+<header class="header">
+    <div class="logo"><img src="logo.jpg" alt="logo">
+        <h2 class="logoname">BETTER<br><span>LIFE</span></h2>
+    </div>
+   <nav class="navbar">
+      <div id="close-navbar" class="fas fa-times"></div>
+      <a href="home.html">HOME</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="donation.html">DONATION</a>
+      <a href="shelter.html">SHELTER</a>
+      <a href="contact.html">CONTACT US</a>
+   </nav>
+
+   <div class="icons">
+      <div id="account-btn" class="fas fa-user"></div>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </div>
+
+</header>
+   
+<!-- navbar section ends-->
+
+
+
+<!-- account form section starts  -->
+
+<div class="account-form">
+
+   <div id="close-form" class="fas fa-times"></div>
+
+   <div class="buttons">
+      <span class="btn active login-btn">login</span>
+      <span class="btn register-btn">register</span>
+   </div>
+
+   <form class="login-form active" action="">
+      <h3>login now</h3>
+      <input type="email" placeholder="enter your email" class="box">
+      <input type="password" placeholder="enter your password" class="box">
+      <div class="flex">
+         <input type="checkbox" name="" id="remember-me">
+         <label for="remember-me">remember me</label>
+         <a href="#">forgot password?</a>
+      </div>
+      <input type="submit" value="login now" class="btn">
+   </form>
+
+   <form class="register-form" action="">
+      <h3>register now</h3>
+      <input type="name" placeholder="Enter your full name" class="box">
+      <input type="email" placeholder="enter your email" class="box">
+      <input type="password" placeholder="enter your password" class="box">
+      <input type="password" placeholder="confirm your password" class="box">
+      <input type="submit" value="register now" class="btn">
+   </form>
+
+</div>
+
+<!-- account form section ends -->
+
+<!-- donation  section start -->
+<section class="heading-link">
+   <h3>DONATION</h3>
+   <p> <a href="home.html">HOME</a> /DONATION</p>
+</section>
+
+<section class="donation">
+
+   <h1 class="heading">WAYS OF DONATION </h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="image">
+            <img src="book.png" alt="">
+            <h3>BOOKS</h3>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="shopping-bag.png" alt="">
+            <h3>FOOD</h3>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="salary.png" alt="">
+            <h3>FUNDS</h3>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="sneakers.png" alt="">
+            <h3>FOOTWEAR</h3>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="gadgets.png" alt="">
+            <h3>GADGETS</h3>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="clothing.png" alt="">
+            <h3>CLOTHES</h3>
+         </div>
+      </div>
+      <div class="box">
+         <div class="image">
+            <img src="blanket.jpg" alt="">
+            <h3>BLANKETS</h3>
+         </div>
+      </div>
+      <div class="box">
+         <div class="image">
+            <img src="medicine.avif" alt="">
+            <h3>MEDICINE</h3>
+         </div>
+      </div>
+   </div>
+   
+   <div class="material">
+      <div class="heading">
+          <h3>Fill this form, our team will collect your <span>Donation</span> or <span>Wastage</span> from your place</h3>
+      </div>
+   </div>
+   <form aciton ="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+      <div class="formdesign" id="name">
+          Name: <input type="text" name="fname" required><b><span class="formerror"> </span></b>
+      </div>
+
+      <div class="formdesign" id="email">
+          Email: <input type="email" name="femail" required><b><span class="formerror"> </span></b>
+      </div>
+      <div class="formdesign" id="phone">
+          Phone: <input type="phone" name="fphone" required><b><span class="formerror"></span></b>
+      </div>
+      <div class="formdesign" id="donationtype" required><b><span class="formerror"></span></b>
+          donation type:<select name="donation" id="donation">
+            <option value=""></option>
+            <option value="food">FOOD</option>
+            <option value="clothes">CLOTHES</option>
+            <option value="footware">FOOTWARE</option>
+            <option value="books">BOOKS</option>
+            <option value="gadget">GADGETS</option>
+            <option value="blankets">BLANKETS</option>
+            <option value="medicine">MEDICINE</option>
+         </select>
+      </div>
+      <div class="formdesign" id="donationtype" required><b><span class="formerror"></span></b>
+         Place:<select name="donation" id="donation">
+           <option value=""></option>
+           <option value="delhi">DELHI</option>
+           <option value="noida">NOIDA</option>
+           <option value="meerut">MEERUT</option>
+           <option value="ghaziabad">GHAZIABAD</option>
+           <option value="greater-noida">GREATER-NOIDA</option>
+        </select>
+     </div>
+      <div class="formdesign" id="pass">
+          Address: <input type="text" name="fpass" required><b><span class="formerror"></span></b>
+      </div>
+      <div class="formdesign" id="cpass">
+         Your Message: <input type="text" name="fcpass" required><b><span class="formerror"></span></b>
+      </div>
+      <input class="but" type="submit" value="Submit">
+   </form>
+
+   <div class="money">
+      <h1><span></span>DONATE ONLINE</h1>
+   </div>
+
+</section>
+   
+<!-- donation section ends  -->
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="footer-logo"><img src="logo.jpg" alt="logo">
+            <h2 class="footer-logoname">BETTER<br><span>LIFE</span></h2>
+         </div>
+         <p>Let's Build The Better world Together</p>
+         <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+         </div>
+      </div>
+
+      <div class="box">
+         <h3>Quick Links</h3>
+         <a href="home.html" class="link">HOME</a>
+         <a href="gallery.html" class="link">GALLERY</a>
+         <a href="donation.html" class="link">DONATION</a>
+         <a href="shelter.html" class="link">SHELTER</a>
+         <a href="contact.html" class="link">CONTACT US</a>
+      </div>
+
+      <div class="box">
+         <h3>useful links</h3>
+         <a href="#" class="link">help center</a>
+         <a href="#" class="link">ask questions</a>
+         <a href="#" class="link">send feedback</a>
+      </div>
+
+      <div class="box">
+         <h3>newsletter</h3>
+         <p>subscribe for latest upadates</p>
+         <form action="">
+            <input type="email" name="" placeholder="enter your email" id="" class="email">
+            <input type="submit" value="subscribe" class="btn">
+         </form>
+      </div>
+
+   </div>
+
+   <div class="credit"> created by <span>BETTER LIFE</span> | all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+<!-- swiper js link  -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="script.txt"></script>
+
+</body>
+</html>
+
+
